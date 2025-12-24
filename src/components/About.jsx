@@ -28,7 +28,7 @@ const About = () => {
     })
 
     return (
-        <div id="about">
+        <div id="about" className="bg-block relative z-10 bg-black">
             <div className="mb-16 md:px-0 px-5">
                 <div className="content">
                     <div className="md:col-span-8">

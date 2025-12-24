@@ -75,6 +75,8 @@ const Hero = () => {
             tl.to(videoRef.current, {
                 currentTime: videoRef.current.duration
             });
+
+            ScrollTrigger.refresh();
         };
         
         videoRef.current.onloadedmetadata = setupVideoTrigger;
@@ -117,7 +119,7 @@ const Hero = () => {
                 </div>
             </section>
 
-            <div className="video absolute inset-0">
+            <div className="video absolute inset-0 z-0">
                 <video 
                     ref={videoRef}
                     src="videos/output.mp4#t=0.001"
